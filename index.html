@@ -10,6 +10,8 @@
 </head>
 <body>
 
+  <h1>Get Your Business Questions Answered by Industry Experts</h1>
+
   <div class="widget">
     <div class="widget__header">
       <div class="widget__avatar">
@@ -17,7 +19,7 @@
       </div>
       <div class="widget__person">
         <p class="widget__person-name">
-          Karen Bartle (Hypnoteraphy Training)
+          <!-- Karen Bartle (Hypnoteraphy Training) -->
         </p>
         <p class="widget__person-role">
           Sunshine Coast Australian
@@ -25,12 +27,22 @@
         <a class="widget__person-link" href="">View Profile</a>
       </div>
     </div>
-    <div class="widget__desc">Get business advise on mentoring from successful entrepreneurs in your industry.</div>
+    <div class="widget__desc">
+      <!-- Get business advise on mentoring from successful entrepreneurs in your industry. -->
+    </div>
     <div class="widget__footer">
       <button class="widget__footer-btn widget-btn widget-btn--gray" type="button">AUD 6.50 / <small>min</small></button>
       <button class="widget__footer-btn widget-btn widget-btn--primary" type="button">Schedule a call</button>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" type="text/javascript"></script>
+  <script>
+    $('.widget__person-name').text(faker.name.findName() + '(' + faker.commerce.department() + ')');
+    $('.widget__avatar-img').attr("src", faker.internet.avatar());
+    $('.widget__desc').text(faker.lorem.sentence());
+  </script>
   
 </body>
 </html>
