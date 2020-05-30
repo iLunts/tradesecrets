@@ -1,0 +1,79 @@
+.widget {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  vertical-align: middle;
+  width: 250px;
+  max-width: 250px;
+  background-color: #fff;
+  background: #fff;
+  border: 2px solid #999;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.widget .widget__header {
+  display: flex;
+}
+.widget .widget__avatar {
+  width: 50%;
+  flex-shrink: 0;
+}
+.widget .widget__avatar-img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #eee;
+}
+.widget .widget__person {
+  width: 50%;
+  flex-shrink: 0;
+  color: #555;
+}
+.widget .widget__person-name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+}
+.widget .widget__person-role {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555;
+}
+.widget .widget__person-link {
+  display: block;
+  text-decoration: none;
+  margin-top: 5px;
+  color: #2196f3;
+}
+.widget .widget__desc {
+  margin: 15px 0;
+  font-size: 12px;
+  line-height: 17px;
+  color: #555;
+}
+.widget .widget__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.widget .widget__footer-btn {
+  width: 100%;
+}
+.widget-btn {
+  position: relative;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 7px;
+  color: #2196f3;
+}
+.widget-btn + .widget-btn {
+  margin-left: 10px;
+}
+.widget-btn.widget-btn--primary {
+  background: #2196f3;
+  border-color: #2196f3;
+  color: #fff;
+}
