@@ -1,7 +1,25 @@
 // out: ../css/
+@import './variables.less';
 //
 html, body{
   margin: 30px;
   padding: 0;
   font-size: 14px;
+}
+
+// ---------------------------------------------------------------------------
+// size: Small
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-sm-max) and (min-width: @breakpoint-sm-min) {}
+
+// ---------------------------------------------------------------------------
+// size: xSmall
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-xs-max) and (min-width: @breakpoint-xs-min) {
+  html, body{
+    margin: 2.5%;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+  }
 }
